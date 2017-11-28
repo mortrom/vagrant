@@ -1,7 +1,8 @@
 #! /bin/bash
+license_key=$1
 
 echo "### Create new relic infrastructure config file"
-echo "license_key: feeaa097e138d001c926358f59546c8a328398bd" | sudo tee -a /etc/newrelic-infra.yml
+echo "license_key: $license_key" | sudo tee -a /etc/newrelic-infra.yml
 
 echo "### Retrieve and install the New Relic GPG key"
 curl https://download.newrelic.com/infrastructure_agent/gpg/newrelic-infra.gpg | sudo apt-key add -

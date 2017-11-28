@@ -1,4 +1,5 @@
 #! /bin/bash
+license_key=$1
 
 echo "###### NEW RELIC START ######"
 
@@ -15,7 +16,7 @@ echo "### Install newrelic server"
 apt-get install newrelic-sysmond
 
 echo "### Configure the new relic license key"
-nrsysmond-config --set license_key=feeaa097e138d001c926358f59546c8a328398bd
+nrsysmond-config --set license_key=$license_key
 
 echo "### Add newrelic user to docker group"
 usermod -a -G docker newrelic
