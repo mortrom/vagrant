@@ -4,13 +4,15 @@ Various vagrant implementations
 ## Usage
 1. Install vagrant and virtual box.  See Dependencies below.
 2. Clone/fork this repo.
-3. cd into the rancher-server directory.
-4. vagrant up
-5. In a browser enter <hostname>:8080
-6. Wait for the Rancher GUI to appear - it may take a minute.
-7. If a rancher host is required, cd to rancher-host and run vagrant up.
-8. A host should appear on the hosts window of the GUI.
-9. Done.
+
+### Rancher
+1. cd into the rancher-server directory.
+2. vagrant up
+3. In a browser enter "hostname:8080".
+4. Wait for the Rancher GUI to appear - it may take a minute.
+5. If a rancher host is required, cd to rancher-host and run vagrant up.
+6. A host should appear on the hosts window of the GUI.
+7. Done!
 
 ## Dependencies
 These configurations have been tested with the following versions
